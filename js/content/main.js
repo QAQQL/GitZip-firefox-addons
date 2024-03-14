@@ -128,9 +128,9 @@ function callAjax(url, token){
 	});
 }
 
-var reposSplitContentSelector = "[data-selector='repos-split-pane-content']";
-var upfolderItemSelector = reposSplitContentSelector + " table tbody > tr > td";
-var itemCollectSelector = "div.js-navigation-item, " + reposSplitContentSelector + " table tbody tr.react-directory-row > td[class$='cell-large-screen']";
+var reposSplitContentSelector = "[aria-labelledby='folders-and-files']";
+var upfolderItemSelector = reposSplitContentSelector + " tbody > tr > td";
+var itemCollectSelector = "div.js-navigation-item, " + reposSplitContentSelector + " tbody tr.react-directory-row > td[class$='cell-large-screen']";
 var closestRowFromItemSelector = ".js-navigation-item, tr";
 
 function getSelectorConcat(baseSelector, appendSelector) {
